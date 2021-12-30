@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改</title>
+</head>
+<body>
+<form action="/webstore/modify/{{ abook.id }}" method="post">
+    <div>书名: {{ abook.title }}</div>
+    <div>出版社: {{ abook.pub }}</div>
+    <div>定价: {{ abook.price }}</div>
+    <div>零售价: {{ abook.market_price }}</div>
+<!--    <div>-->
+<!--        <input type="text" name="title" value="{{ abook.title }}" placeholder="书名" required>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <input type="text" name="pub" value="{{ abook.pub }}" placeholder="出版社" required>-->
+<!--    </div>-->
+    <div>
+        <input type="text" name="price" value="{{ abook.price }}" placeholder="定价" required>
+    </div>
+    <div>
+        <input type="text" name="market_price" value="{{ abook.market_price }}" placeholder="零售价" required>
+    </div>
+    <div>
+        <input type="submit" value="修改价格">
+    </div>
+</form>
+</body>
+</html>
